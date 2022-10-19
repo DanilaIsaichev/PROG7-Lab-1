@@ -1,5 +1,3 @@
----
-
 ### Вычисление времени выполнения функции
 
 #### Для своей функции:
@@ -19,5 +17,3 @@
 ```python -m timeit -s "from main import integrate; from math import(cos, pi); integrate(cos, 0, pi)" -r 100 -u msec```  
 ```python -m timeit -s "from main import integrate; from math import(cos, pi); integrate(cos, 0, pi, n_iter=10000)" -r 100 -u msec```  
 ```python -m timeit -s "from main import integrate; from math import(cos, pi); integrate(cos, 0, pi, n_iter=100000)" -r 100 -u msec```  
-
----
