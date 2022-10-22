@@ -2,9 +2,9 @@
 
 #### Для своей функции:
 
-```python -m timeit -s "from main import integrate; integrate(lambda x: (2 * x * x + 0.7) ** (1 / 2) / (1.5 + (0.8 * x + 1) ** (1 / 2)), 1.2, 3)" -r 100 -u msec```  
-```python -m timeit -s "from main import integrate; integrate(lambda x: (2 * x * x + 0.7) ** (1 / 2) / (1.5 + (0.8 * x + 1) ** (1 / 2)), 1.2, 3, n_iter=10000)" -r 100 -u msec```  
-```python -m timeit -s "from main import integrate; integrate(lambda x: (2 * x * x + 0.7) ** (1 / 2) / (1.5 + (0.8 * x + 1) ** (1 / 2)), 1.2, 3, n_iter=100000)" -r 100 -u msec```  
+```python -m timeit -s "from main import integrate, my_function; integrate(my_function, 1.2, 3)" -r 100 -u msec```  
+```python -m timeit -s "from main import integrate, my_function; integrate(my_function, 1.2, 3, n_iter=10000)" -r 100 -u msec```  
+```python -m timeit -s "from main import integrate, my_function; integrate(my_function, 1.2, 3, n_iter=100000)" -r 100 -u msec```  
 
 #### Sin(x):
 
